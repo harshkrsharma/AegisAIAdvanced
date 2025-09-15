@@ -52,6 +52,8 @@ def generate_normal_traffic(num_records):
         dport, proto = random.choice(list(common_ports.items()))
         
         # Add some variation to packet sizes
+        // used
+        
         if is_noisy:
             pkt_size = random.randint(1500, 3000)  # Occasionally larger packets
             ttl = random.randint(32, 64)  # Occasionally lower TTL
